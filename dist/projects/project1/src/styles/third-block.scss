@@ -1,0 +1,101 @@
+.third-block {
+    padding-left: 144px;
+    padding-right: 230px;
+    z-index: 10;
+    .container {
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 195px 0 155px 0;
+    }
+}
+
+.third-block-image {
+    position: relative;
+    width: 40.3vw;
+    max-width: 580px;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    button {
+        position: absolute;
+        bottom: 32px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background: rgba(255, 255, 255, 0.8);
+        white-space: nowrap;
+        text-align: center;
+        &:hover {
+            background: rgba(255, 255, 255, 1); 
+        }
+    }
+}
+
+.third-block-comments {
+    .comment-block {
+        width: 240px;
+        margin-bottom: 40px;
+        text-align: center;
+        &:last-child {
+            margin-bottom: 0;
+            img {
+                display: none;
+            }
+        }
+        &-text {
+            line-height: 1.5rem;
+            margin-bottom: 20px;
+        }
+        &-author {
+            line-height: 1rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .third-block {
+        padding-left: 72px;
+        padding-right: 110px;
+        z-index: 10;
+        .container {
+            padding: 100px 0 80px 0;
+        }
+    }
+    
+
+}
+ 
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    .third-block {
+        padding-left: 20px;
+        padding-right: 20px;
+        z-index: 10;
+        .container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 0;
+        }
+    }
+
+    .third-block-image {
+        width: 80vw;
+        margin-bottom: 30px;
+    }
+    .third-block-comments {
+        .comment-block {
+            width: 240px;
+            margin-bottom: 20px;
+            text-align: center;
+            &-text {
+                margin-bottom: 15px;
+            }
+            &-author {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

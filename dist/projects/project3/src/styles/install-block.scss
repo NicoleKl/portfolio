@@ -1,0 +1,126 @@
+@import 'variables';
+
+.install-block {
+    background: linear-gradient($color-light-grey 50%, transparent 50%) no-repeat;
+    .container {
+        display: flex;
+        align-items: flex-end;
+        padding: 64px 0 123px 0;
+    }
+}
+
+.install__left {
+    width: 31vw;
+    h2 {
+        margin-bottom: 24px;
+    }
+    img {
+        width: 100%;
+        max-width: 445px;
+        height: auto;
+    }
+}
+
+.install__steps {
+    margin-left: auto;
+    .step {
+        display: flex;
+        align-items: center;
+        width: 44vw;
+        max-width: 635px;
+        padding: 23px 80px;
+        cursor: pointer;
+        &__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 96px;
+            height: 96px;
+            margin-right: 15px;
+            border-radius: 100px;
+            background-color: white;
+        }
+        &__description {
+            width: 20vw;
+            margin-left: auto;
+            font-size: 0.875rem;
+            h6 {
+                font-weight: bold;
+                line-height: 1.125rem;
+                letter-spacing: 1px;
+            }
+            p {
+                max-height: 0;
+                opacity: 0;
+                transition: max-height 0.5s ease-in-out, opacity 0.3s;
+                margin-top: 0.5rem;
+                line-height: 1.5rem;
+            }
+        }
+        &.card-open {
+            .step__description p {
+                opacity: 1;
+                max-height: 500px;
+                transition: max-height 0.3s ease-in-out, opacity 0.6s;
+            }
+        }
+    }
+    .first-step {
+        background-color: $color-orange;
+    }
+    .second-step {
+        background-color: $color-orange-light-1;
+    }
+    .third-step {
+        background-color: $color-orange-light-2;
+    }
+}
+
+//tablet style
+@media only screen and (max-width: 1080px)  {
+    .install__steps {
+        .step {
+            padding: 30px;
+            &__icon {
+                display: none;
+            }
+            &__description {
+                width: 40vw;
+            }
+        }
+    }
+}
+
+//mobile style
+@media only screen and (max-width: 767px) {
+    .install-block .container {
+        flex-direction: column;
+    }
+    
+    .install__left {
+        width: 90vw;
+        img {
+            display: none;
+        }
+    }
+    
+    .install__steps {
+        .step {
+            width: 90vw;
+            padding: 20px;
+            &__icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60px;
+                height: 60px;
+                margin-right: 15px;
+                border-radius: 50px;
+                background-color: white;
+            }
+            &__description {
+                width: 50vw;
+            }
+        }
+    }
+}

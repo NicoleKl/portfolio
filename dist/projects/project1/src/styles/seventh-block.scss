@@ -1,0 +1,96 @@
+.seventh-block {
+    padding-left: 63px;
+    padding-right: 41px;
+    background: linear-gradient(270deg, #FFFFFF 45.52%, rgba(255, 255, 255, 0.58) 100%), #EAC1BF;
+    .container {
+        align-items: center;
+        justify-content: center;
+        padding: 63px 0;
+    }
+}
+.join-block {
+    min-width: 265px;
+    margin-bottom: 20px;
+    h1 {
+        margin-bottom: 24px; 
+        font-family: "Ogg";
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    p {
+        margin-bottom: 24px;
+        line-height: 1.5rem;
+    }
+
+}
+
+.seventh-block__photos {
+    display: flex;
+    justify-content: center;
+    img {
+        margin-right: 25px;
+        height: auto;
+        margin-bottom: 20px;
+        &:nth-child(1) {
+            width: 26vw;
+            max-width: 385px;
+            min-width: 200px;
+        }
+        &:nth-child(2) {
+            width: 12.6vw;
+            max-width: 185px;
+            min-width: 96px;
+        }
+        &:nth-child(3) {
+            width: 26vw;
+            max-width: 385px;
+            margin-right: 0;
+            min-width: 200px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .seventh-block {
+        padding: 0 20px;
+        .container {
+            flex-direction: column;
+            padding: 30px 0;
+        }
+    }
+    .join-block {
+        max-width: 150px;
+        margin: 0 0 20px 0;
+        text-align: center;
+        h1 {
+            margin-bottom: 15px; 
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+        p {
+            margin-bottom: 15px;
+            line-height: 1rem;
+        }
+    
+    }
+    .seventh-block__photos {
+        img {
+            margin-right: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .join-block {
+        min-width: 280px;
+        margin: 0 0 20px 0;
+        h1 {
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+    }   
+    .seventh-block__photos {
+        flex-direction: column;
+        align-items: center;
+    }
+}

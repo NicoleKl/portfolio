@@ -1,0 +1,40 @@
+.main-block {
+    background-image: url('../images/main-background.png');
+    background-size: cover;
+    background-position: right;
+    .container {
+        display: flex;
+        padding: 96px 0 58px 0;
+    }
+    
+    &__content {
+        margin-right: auto;
+        h1 {
+            margin-top: 72px;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+//tablet style
+@media only screen and (max-width: 1080px)  {
+    .main-block .container {
+        padding: 50px 0;
+    }
+    .main-block__content h1 {
+        margin-top: 40px;
+    }
+}
+
+//mobile style
+@media only screen and (max-width: 767px) {
+    .main-block .container {
+        padding: 30px 0;
+    }
+    #iphone-x-web {
+        display: none;
+    }
+    .main-block__content h1 {
+        margin-top: 0;
+    }
+}

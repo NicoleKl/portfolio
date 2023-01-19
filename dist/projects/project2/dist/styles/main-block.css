@@ -1,0 +1,53 @@
+.main-block {
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.2), rgba(51, 51, 51, 0.2)), url("../backgrounds/main.jpg");
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+}
+.main-block .container-main-block {
+  padding: 100px 200px 263px 80px;
+}
+.main-block .container-main-block h1 {
+  margin-bottom: 3rem;
+  font-size: 11rem;
+  line-height: 12.6rem;
+  letter-spacing: -2.5px;
+}
+.main-block .container-main-block p {
+  max-width: 630px;
+  margin-bottom: 5rem;
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+.main-block .container-main-block button {
+  padding: 0 55px;
+  background: #536758;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.main-block .container-main-block button:hover {
+  background: rgba(83, 103, 88, 0.5);
+  border: 1px solid white;
+}
+
+@media only screen and (max-width: 1080px) {
+  .main-block .container-main-block {
+    padding: 50px 100px 130px 40px;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  .main-block .container-main-block {
+    padding: 20px 30px 30px 20px;
+  }
+  .main-block .container-main-block h1 {
+    margin-bottom: 1rem;
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+  .main-block .container-main-block p {
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+}

@@ -1,0 +1,52 @@
+.find-dealer-block {
+  background-color: #2A2A2A;
+}
+.find-dealer-block .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.find-dealer-block__text {
+  margin-right: 64px;
+}
+.find-dealer-block__text h1 {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.find-dealer-block__text p {
+  max-width: 820px;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  opacity: 0.6;
+}
+
+.get-in-touch-button {
+  width: 200px;
+  padding: 0 48px;
+  color: white;
+  border: 1px solid white;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  white-space: nowrap;
+}
+.get-in-touch-button:hover {
+  color: #2A2A2A;
+  background-color: white;
+  border: 1px solid #2A2A2A;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  .find-dealer-block .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .find-dealer-block__text {
+    margin-bottom: 2rem;
+  }
+}

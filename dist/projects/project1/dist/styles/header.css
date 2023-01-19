@@ -1,0 +1,35 @@
+header {
+  padding: 35px 30px 35px 60px;
+}
+header .container {
+  justify-content: space-between;
+  align-items: center;
+}
+header .container nav {
+  display: flex;
+  align-items: center;
+}
+header .container nav #search-icon {
+  margin-right: 42px;
+}
+
+#header__center-message {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 320px) {
+  header {
+    padding: 20px;
+  }
+  header .container nav #search-icon {
+    margin-right: 5px;
+  }
+
+  #header__center-message {
+    max-width: 200px;
+  }
+}

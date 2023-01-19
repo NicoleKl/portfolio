@@ -1,0 +1,111 @@
+@import 'colors';
+
+
+.contacts-block {
+    background-color: $dark-green;
+    color: white;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.contact-info {
+    h1 {
+        margin-bottom: 2rem;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        letter-spacing: 1.5px;
+        text-transform: uppercase; 
+    }
+    h2 {
+        font-size: 4rem;
+        line-height: 5rem;
+        letter-spacing: 1.5px;
+    }
+    .contact-info__contacts {
+        margin-top: 180px;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        opacity: 0.7;
+        p {
+            margin-bottom: 16px;
+        }
+        a {
+            color: white;
+        }
+    }
+}
+
+.get-in-touch-form {
+    width: 36.8vw;
+    max-width: 530px;
+    min-width: 300px;
+    .input-field {
+        height: 50px;
+        width: 100%;
+        margin-bottom: 12px;
+        padding-left: 16px;
+        padding-right: 16px;
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid white;
+        font-family: 'Circular Std';
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        color: #FFFFFF;
+        opacity: 0.7;
+        &::placeholder {
+            font-family: 'Circular Std';
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            color: #FFFFFF;
+            opacity: 0.7;
+        }
+    }
+    #message-field {
+        height: 134px;
+        padding-top: 15px;
+    }
+    .submit-button {
+        width: 224px;
+        height: 50px;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        text-align: center;
+        color: $dark-green;
+        &:hover {
+            border: 1px solid white;
+            background-color: $dark-green;
+            color: white;
+        }
+    }
+}
+
+@media only screen and (max-width: 1080px)   {    
+    .get-in-touch-form {
+        width: 36.8vw;
+        margin-right: 20px;
+        max-width: 530px;
+        min-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px)  {
+    .contacts-block {
+        .container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    .contact-info {
+        .contact-info__contacts {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+    .get-in-touch-form {
+        width: 80vw;
+    }
+}
+

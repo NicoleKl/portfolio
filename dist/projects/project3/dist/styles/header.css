@@ -1,0 +1,109 @@
+header {
+  box-shadow: 0px 1px 0px #E5E9F2;
+  margin-bottom: 1px;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+}
+
+#header__burger-menu-left, #header__burger-menu-right {
+  display: none;
+}
+
+.header .header__logo {
+  margin-bottom: 5px;
+}
+.header__navigation li {
+  display: inline;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+.header__navigation li svg {
+  margin-left: 0.5rem;
+  margin-bottom: 2px;
+}
+.header__navigation li:hover a {
+  color: #FF7E03;
+}
+.header__navigation .section-with-additional {
+  position: relative;
+}
+.header__navigation .section-with-additional .more-sections {
+  display: none;
+  position: absolute;
+  width: 180%;
+  left: -10px;
+  padding-top: 10px;
+}
+.header__navigation .section-with-additional .more-sections ul {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  background-color: white;
+  box-shadow: 1px 1px 1px #E5E9F2;
+}
+.header__navigation .section-with-additional .more-sections ul li {
+  margin: 10px;
+}
+.header__navigation .section-with-additional .more-sections ul li:hover a {
+  color: #FF7E03;
+}
+.header__navigation .section-with-additional:hover .more-sections {
+  display: block;
+}
+.header__navigation .section-with-additional:hover a {
+  color: initial;
+}
+.header__auth-buttons {
+  margin-left: auto;
+}
+.header__auth-buttons .auth-button {
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+}
+.header__auth-buttons .auth-button:first-child {
+  margin-right: 14px;
+  color: #FF7E03;
+  background: rgba(255, 126, 3, 0.3);
+}
+.header__auth-buttons .auth-button:nth-child(2) {
+  color: white;
+  background-color: #FF7E03;
+}
+.header__auth-buttons .auth-button:hover {
+  color: #FF7E03;
+  background: white;
+  border-color: #FF7E03;
+}
+
+@media only screen and (max-width: 1080px) {
+  header .container {
+    justify-content: space-between;
+  }
+
+  #header__burger-menu-left {
+    display: block;
+  }
+  #header__burger-menu-left:hover {
+    fill: red;
+  }
+
+  .header__navigation {
+    display: none;
+  }
+  .header__auth-buttons {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #header__burger-menu-right {
+    display: block;
+  }
+
+  #header__burger-menu-left, .header__auth-buttons {
+    display: none;
+  }
+}

@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "RobotoMono";
+  src: url("../fonts/RobotoMono-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0056a7, #165fa3, #477aaa);
+  font-family: "RobotoMono";
+  font-size: 15px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 40px;
+}

@@ -1,0 +1,77 @@
+.trending-products-block {
+  background-color: #536758;
+}
+.trending-products-block .container {
+  padding: 110px 0 100px 0;
+}
+
+.trending-products-top-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.trending-products-top-panel h1 {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: white;
+}
+.trending-products-top-panel button {
+  padding: 0 66px;
+  color: white;
+  border: 1px solid white;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  white-space: nowrap;
+}
+.trending-products-top-panel button:hover {
+  background: white;
+  border: 1px solid #536758;
+  color: #536758;
+}
+
+.trending-products-catalogue {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
+  justify-items: center;
+}
+.trending-products-catalogue:last-child {
+  margin-right: 0px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .trending-products-block .container {
+    padding: 30px 0;
+  }
+
+  .trending-products-top-panel {
+    margin-bottom: 20px;
+  }
+
+  .trending-products-catalogue {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .trending-products-catalogue:last-child {
+    margin-right: 0;
+  }
+  .trending-products-catalogue .product-section {
+    width: 50vw;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  .trending-products-block .container {
+    padding: 20px 0;
+  }
+
+  .trending-products-catalogue {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .trending-products-catalogue .product-section {
+    margin: 0 auto;
+    width: 90vw;
+  }
+}

@@ -1,0 +1,75 @@
+@import 'variables';
+
+.reviews-block {
+    background-image: url(../backgrounds/reviews-background.jpg);
+    background-size: cover;
+    .container {
+        padding: 100px 0;
+    }
+}
+
+.reviews {
+    position: relative;
+    width: 39vw;
+    max-width: 560px;
+    padding-bottom: 76px;
+    background-color: $dark-grey;
+    overflow: hidden;
+    .reviews--slider {
+        display: flex;
+        flex: 0 0 1;
+        width: 300%;
+        transition: all 0.5s linear;
+        .review {
+            padding: 36px;
+            &--text {
+                margin-bottom: 20px;
+                font-size: 1.8rem;
+                line-height: 3rem;
+                letter-spacing: -0.01em;
+                color: white;
+            }
+            &--author {
+                font-size: 1.68rem;
+                line-height: 2.2rem;
+                color: $dark-green;
+            } 
+        }
+    }
+    
+    &--navigation {
+        position: absolute;
+        bottom: 58px;
+        right: 36px;
+        button {
+            width: 15px;
+            height: 15px;
+            background-color: transparent;
+            &:first-child {
+                margin-right: 44px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .reviews-block {
+        .container {
+            padding: 20px 0;
+        }
+    }
+    
+    .reviews {
+        position: relative;
+        width: 70vw;
+        padding-bottom: 50px;
+        background-color: $dark-grey;
+        .review {
+            padding: 10px;  
+        }
+        &--navigation {
+            bottom: 25px;
+            right: 20px;
+        }
+    }
+}

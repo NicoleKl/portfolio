@@ -1,0 +1,64 @@
+.materials-block {
+  display: flex;
+  flex-basis: 33.333333%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.materials-block .materials {
+  padding: 70px 88px 40px 64px;
+  cursor: pointer;
+}
+.materials-block .materials h1 {
+  margin-bottom: 5rem;
+  color: #536758;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.materials-block .materials h2 {
+  margin-bottom: 1.6rem;
+  color: #2b2b2b;
+  font-size: 2rem;
+  line-height: 2.6rem;
+}
+.materials-block .materials p {
+  margin-bottom: 62px;
+  color: #939393;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+}
+.materials-block .materials button {
+  width: 50px;
+  box-sizing: border-box;
+  border: 1px solid white;
+}
+.materials-block .materials:hover {
+  background-color: #536758;
+}
+.materials-block .materials:hover h1, .materials-block .materials:hover h2, .materials-block .materials:hover p {
+  color: white;
+}
+
+@media only screen and (max-width: 1080px) {
+  .materials-block .materials {
+    padding: 5rem;
+  }
+  .materials-block .materials h1 {
+    margin-bottom: 3rem;
+  }
+  .materials-block .materials p {
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  .materials-block {
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+  .materials-block button {
+    width: 30px;
+    height: 30px;
+    padding-top: 4px;
+  }
+}

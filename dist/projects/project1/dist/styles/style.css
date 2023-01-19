@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Basis Grotesque Pro";
+  src: url(../fonts/BasisGrotesquePro-Light.woff);
+}
+@font-face {
+  font-family: "Ogg";
+  src: url(../fonts/Ogg-Roman.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+body {
+  font-size: 16px;
+  font-family: "Basis Grotesque Pro";
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1360px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.block {
+  border-bottom: 1px solid #EAC1BF;
+}

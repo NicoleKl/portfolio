@@ -1,0 +1,94 @@
+.customer-stories-block {
+  background: rgba(255, 126, 3, 0.1);
+}
+.customer-stories-block .container {
+  display: flex;
+  padding: 64px 0 80px 0;
+}
+
+.customer-stories__left-block {
+  width: 50%;
+  margin-right: 30px;
+}
+.customer-stories__heading {
+  background-image: url("../images/quotes.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-top: 56px;
+  padding-left: 95px;
+}
+.customer-stories__heading p {
+  margin-top: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+.customer-stories__story-block {
+  padding: 32px;
+  background: white;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
+}
+.customer-stories__story-block .story-block__text {
+  margin-top: 30px;
+  padding-left: 30px;
+  background-image: url("../images/quotes-small.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.customer-stories__story-block .story-block__text p {
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+.customer-stories__story-block .story-block__text__author {
+  margin-top: 1.5rem;
+}
+.customer-stories__story-block .story-block__text__author__name {
+  font-weight: bold;
+  line-height: 1.75rem;
+}
+.customer-stories__story-block .story-block__text__author__position {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #969BAB;
+}
+
+.first-story {
+  width: 24.3vw;
+  max-width: 350px;
+  margin-top: 24px;
+  float: right;
+}
+
+.second-story {
+  width: 31vw;
+  max-width: 445px;
+  margin-top: 104px;
+}
+
+.third-story {
+  width: 24.3vw;
+  max-width: 350px;
+  margin-top: 32px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .customer-stories-block .container {
+    flex-direction: column;
+  }
+
+  .customer-stories__left-block {
+    width: 85vw;
+    margin: 0 auto;
+  }
+  .customer-stories__left-block .customer-stories__heading {
+    padding: 0;
+  }
+
+  .first-story, .second-story, .third-story {
+    width: 84vw;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    float: inherit;
+  }
+}

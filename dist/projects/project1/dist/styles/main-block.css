@@ -1,0 +1,82 @@
+.main-block {
+  background-image: url(../images/background-rocks.png), url(../images/background_main.jpg);
+  background-size: cover, cover;
+}
+.main-block .container {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 179px 0 220px 0;
+}
+
+h1.main-block__central-text {
+  max-width: 650px;
+  font-family: "Ogg";
+  font-size: 118px;
+  line-height: 120px;
+  text-align: center;
+}
+
+#main-block__button {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.ticker-block {
+  padding-top: 30px;
+  padding-bottom: 35px;
+  overflow: hidden;
+}
+.ticker-block .url-line {
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  line-height: 1.25rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  float: left;
+  animation: slide 30s linear infinite;
+}
+.ticker-block .url-line .gradient-url {
+  background: linear-gradient(to right, #865ef5a6 0%, #ebc418be 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 1080px) {
+  h1.main-block__central-text {
+    max-width: 450px;
+    font-size: 80px;
+    line-height: 85px;
+  }
+
+  .ticker-block {
+    padding-top: 20px;
+    padding-bottom: 23px;
+  }
+  .ticker-block .url-line {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  h1.main-block__central-text {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  #main-block__button {
+    position: absolute;
+    bottom: 50px;
+    right: auto;
+    left: auto;
+  }
+}

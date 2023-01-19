@@ -1,0 +1,60 @@
+@import 'colors';
+
+.main-block {
+    background: linear-gradient(0deg, rgba(51, 51, 51, 0.2), rgba(51, 51, 51, 0.2)), url('../backgrounds/main.jpg');
+    background-size: cover;
+    background-position: bottom;
+    color: white; 
+    .container-main-block {
+        padding: 100px 200px 263px 80px;
+        h1 {
+            margin-bottom: 3rem;
+            font-size: 11rem;
+            line-height: 12.6rem;
+            letter-spacing: -2.5px;
+        }
+        p {
+            max-width: 630px;
+            margin-bottom: 5rem;
+            font-size: 2.4rem;
+            line-height: 3rem;
+        }
+        button {
+            padding: 0 55px;
+            background: $dark-green;
+            color: white;
+            font-weight: bold;
+            box-sizing: border-box;
+            &:hover {
+                background: transparentize($dark-green, 0.5);
+                border: 1px solid white;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .main-block {
+        .container-main-block {
+            padding: 50px 100px 130px 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px)  {
+    .main-block {
+        .container-main-block {
+            padding: 20px 30px 30px 20px;
+            h1 {
+                margin-bottom: 1rem;
+                font-size: 6rem;
+                line-height: 7rem;
+            }
+            p {
+                margin-bottom: 2rem;
+                font-size: 2.4rem;
+                line-height: 3rem;
+            }
+        }
+    }
+}

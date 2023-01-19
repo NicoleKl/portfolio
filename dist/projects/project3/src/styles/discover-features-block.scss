@@ -1,0 +1,42 @@
+.discover-features-block {
+    .container {
+        padding: 64px 0;
+    }
+}
+
+.key-features-container {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 0;
+    grid-auto-flow: column;
+    img {
+        margin-top: 54px;
+    }
+    h5 {
+        margin-top: 1.5rem;
+    }
+    p {
+        margin-top: 0.5rem;
+        line-height: 1.5rem;
+    }
+    a {
+        margin-top: 1.5rem;
+    }
+}
+
+//mobile style
+@media only screen and (max-width: 767px) {
+    .discover-features-block .container {
+        padding: 30px 0;
+    }
+    .key-features-container {
+        grid-template-rows: repeat(12, auto);
+        grid-template-columns: 90vw;
+        margin-top: 30px;
+        a {
+            margin-top: 0.5rem;
+        }
+    }
+}

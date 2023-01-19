@@ -1,0 +1,15 @@
+header {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 26px 6px 31px 13px;
+        & > * {
+            cursor: pointer;
+        }
+    }
+}
+
+.header-grey {
+    background-color: rgba(249, 249, 249, 1);
+}
