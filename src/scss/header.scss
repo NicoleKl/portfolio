@@ -1,15 +1,20 @@
 header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: calc(100vh - 200px);
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 200px);  
     text-align: center;
     color: #eee;
     z-index: -1;
     animation: fadeIn 1.5s ease-in-out;
     
     .container {
+        position: sticky;
+        z-index: -1;
         max-width: 1300px;
         text-align: left;
         scroll-snap-align: start;
@@ -28,6 +33,10 @@ header {
             margin: 20px 0 50px;
             font-size: 20px;
             line-height: 40px;
+            &_link {
+                color: #eee;
+                font-size: 20px;
+            }
         }
         .nonComm {
             font-size: 30px;
