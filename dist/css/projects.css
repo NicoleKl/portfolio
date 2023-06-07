@@ -69,7 +69,7 @@ section .projectsContainer .projectCardContainer .projectCard:hover {
 }
 section .projectsContainer .projectCardContainer .projectCard:hover .projectPreview {
   width: 100%;
-  transition: width 1s;
+  transition: width 0.5s;
   padding: 0;
   height: 550px;
   overflow: scroll;
